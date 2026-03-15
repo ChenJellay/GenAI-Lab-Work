@@ -1,0 +1,14 @@
+# Model weights and large binaries (use Hugging Face / Git LFS instead)
+Qwen3.5-9B-MLX-4bit/
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.ckpt
+
+# Hugging Face cache
+.cache/
+**/__pycache__/
+
+# OS
+.DS_Store
