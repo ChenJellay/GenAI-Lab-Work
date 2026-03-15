@@ -1,0 +1,10 @@
+# Qwen3.5-MLX-4bit experimentation
+# Python 3.10+ recommended; Apple Silicon for MLX.
+
+# Core MLX and model runner (need 0.30+ for qwen3_5 support)
+mlx>=0.21.0
+mlx-lm>=0.31.0
+
+# Optional: download model from Hugging Face to local dir
+# pip install "huggingface_hub[hf_xet]"
+huggingface_hub>=0.26.0
