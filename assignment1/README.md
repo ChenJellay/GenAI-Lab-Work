@@ -27,17 +27,19 @@ pip install -U "mlx-lm>=0.31.0"
 
 ### 2. Download the model (one-time)
 
-From the project root:
+From the project root, install the Hugging Face CLI (one-time):
 
 ```bash
-# Optional: use HF cache with hf_xet if needed
-pip install "huggingface_hub[hf_xet]"
-
-# Download MLX 4-bit model to local directory
-huggingface-cli download --local-dir Qwen3.5-9B-MLX-4bit mlx-community/Qwen3.5-9B-MLX-4bit
+pip install "huggingface_hub[cli]"
 ```
 
-This creates a folder `Qwen3.5-9B-MLX-4bit` in the current directory. The script loads from this path by default.
+Then download the MLX 4-bit model to a local directory:
+
+```bash
+hf download mlx-community/Qwen3.5-9B-MLX-4bit --local-dir Qwen3.5-9B-MLX-4bit
+```
+
+This creates a folder `Qwen3.5-9B-MLX-4bit` in the current directory. The scripts load from this path by default.
 
 ### 3. Run experiments
 
