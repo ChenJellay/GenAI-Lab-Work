@@ -1,14 +1,46 @@
-# Model weights and large binaries (use Hugging Face / Git LFS instead)
-Qwen3.5-9B-MLX-4bit/
-*.safetensors
-*.bin
-*.pt
-*.pth
-*.ckpt
+### Python / notebooks
+.venv/
+venv/
+ENV/
+env/
 
-# Hugging Face cache
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Jupyter only: don't ignore the notebooks themselves (we may need to submit them)
+.ipynb_checkpoints/
+
+### ML / LLM caches, runs, and checkpoints
 .cache/
-**/__pycache__/
+**/.cache/
+**/.huggingface/
+**/huggingface/
+**/.transformers/
+**/transformers/
+wandb/
+**/.wandb/
 
-# OS
+# Training/evaluation artifacts
+checkpoints/
+**/checkpoints/
+models/
+**/models/
+runs/
+**/runs/
+lightning_logs/
+**/lightning_logs/
+outputs/
+**/outputs/
+
+### Large generated artifacts / logs
+*.log
+*.tmp
+*.cache
+*.db
+tmp/
+temp/
+
+### OS
 .DS_Store
+
