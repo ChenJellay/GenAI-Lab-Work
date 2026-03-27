@@ -20,3 +20,4 @@ numpy
 Sentence-transformers
 dotenv
 matplotlib
+mlx-lm
