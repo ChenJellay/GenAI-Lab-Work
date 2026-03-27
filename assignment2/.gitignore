@@ -63,7 +63,7 @@ temp/
 ### OS
 .DS_Store
 
-### Chromadb
+### Chroma
 chroma_db/
 **/chroma_db/
 
